@@ -25,9 +25,7 @@ mqsistart NODENAME
 mqsicreateexecutiongroup NODENAME -e main -w 90
 mqsicreateexecutiongroup NODENAME -e auth -w 90
 ```
-```sh
 ### Set port for Servers
-```
 ```sh
 mqsichangeproperties NODENAME -e main -o HTTPConnector -n explicitlySetPortNumber -v 7806
 mqsichangeproperties NODENAME -e auth -o HTTPConnector -n explicitlySetPortNumber -v 7807
